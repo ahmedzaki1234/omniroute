@@ -1,0 +1,44 @@
+{
+  "name": "omniroute",
+  "version": "1.0.0",
+  "description": "A unified AI API routing and management system with Claude Code integration",
+  "main": "src/index.js",
+  "bin": {
+    "omniroute": "bin/omniroute.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "serve": "node src/server.js",
+    "setup": "node src/cli/setup.js",
+    "configure": "node src/cli/configure.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "ai",
+    "routing",
+    "api",
+    "claude",
+    "openai",
+    "gateway"
+  ],
+  "author": "ahmedzaki1234",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.5",
+    "sqlite3": "^5.1.6",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "eslint": "^8.50.0"
+  }
+}
